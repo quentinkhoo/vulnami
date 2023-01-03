@@ -2,7 +2,7 @@
 
 require "hanami"
 
-module Wakuwaku
+module Vulnami
   class App < Hanami::App
   end
 end

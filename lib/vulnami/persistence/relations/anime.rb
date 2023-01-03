@@ -1,4 +1,4 @@
-module Wakuwaku
+module Vulnami
   module Persistence
     module Relations
       class Anime < ROM::Relation[:sql]

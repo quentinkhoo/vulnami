@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Wakuwaku::Actions::Anya::Show do
+RSpec.describe Vulnami::Actions::Anya::Show do
   let(:params) { Hash[] }
 
   it "works" do

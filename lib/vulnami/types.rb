@@ -2,7 +2,7 @@
 
 require "dry/types"
 
-module Wakuwaku
+module Vulnami
   Types = Dry.Types
 
   module Types

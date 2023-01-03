@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-module Wakuwaku
+module Vulnami
   module Actions
     module Home
-      class Show < Wakuwaku::Action
+      class Show < Vulnami::Action
         def handle(*, response)
           response.body = "Welcome weebs!"
         end

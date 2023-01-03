@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Wakuwaku::Actions::SpyXFamily::Show do
+RSpec.describe Vulnami::Actions::SpyXFamily::Show do
   let(:params) { Hash[] }
 
   it "works" do

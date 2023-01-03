@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Wakuwaku::Actions::Anime::Index do
+RSpec.describe Vulnami::Actions::Anime::Index do
   let(:params) { Hash[] }
 
   it "works" do

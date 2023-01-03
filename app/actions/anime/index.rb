@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-module Wakuwaku
+module Vulnami
   module Actions
     module Anime
-      class Index < Wakuwaku::Action
+      class Index < Vulnami::Action
       include Deps["persistence.rom"]
 
         def handle(*, response)

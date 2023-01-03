@@ -3,7 +3,7 @@
 
 require "hanami/action"
 
-module Wakuwaku
+module Vulnami
   class Action < Hanami::Action
   end
 end
