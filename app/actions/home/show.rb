@@ -5,7 +5,8 @@ module Vulnami
     module Home
       class Show < Vulnami::Action
         def handle(*, response)
-          response.body = "Welcome weebs!"
+          vulnami = "weebs"
+          response.body = "<h1>Welcome #{vulnami}!</h1>"
         end
       end
     end

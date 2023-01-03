@@ -4,14 +4,14 @@ module Vulnami
   module Actions
     module Animes
       class Index < Vulnami::Action
-      include Deps["persistence.rom"]
+        include Deps["persistence.rom"]
 
         params do
           optional(:page).value(:integer, gt?: 0)
           optional(:per_page).value(:integer, gt?: 0, lteq?: 100)
         end
 
-        def handle(*, response)
+        def handle(request, response)
           halt 422 unless request.params.valid?
           
           animes = rom.relations[:animes]
