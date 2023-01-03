@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Vulnami::Actions::Animes::Index do
+RSpec.describe Vulnami::Actions::Animes::Show do
   let(:params) { Hash[] }
 
   it "works" do

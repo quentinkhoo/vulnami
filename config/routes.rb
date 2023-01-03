@@ -3,6 +3,7 @@
 module Vulnami
   class Routes < Hanami::Routes
     root to: "home.show"
-    get "/anime", to: "anime.index"
+    get "/animes", to: "animes.index"
+    get "/animes/:id", to: "animes.show"
   end
 end

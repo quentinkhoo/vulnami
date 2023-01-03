@@ -1,8 +1,8 @@
 module Vulnami
   module Persistence
     module Relations
-      class Anime < ROM::Relation[:sql]
-        schema(:anime, infer: true)
+      class Animes < ROM::Relation[:sql]
+        schema(:animes, infer: true)
       end
     end
   end
