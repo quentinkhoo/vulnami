@@ -16,8 +16,8 @@ module Vulnami
           ).one
 
           response.format = :json
-            response.body = anime.to_json
-          end
+          response.body = anime.to_json
+          
         end
       end
     end
