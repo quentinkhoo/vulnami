@@ -1,1 +1,48 @@
-<p>anime-details works!</p>
+<div *ngIf="viewMode; else editable">
+  <div *ngIf="currentAnime.id">
+    <h4>Anime</h4>
+    <div>
+      <label><strong>Title:</strong></label> {{ currentAnime.title }}
+    </div>
+    <div>
+      <label><strong>Genre:</strong></label>
+      {{ currentAnime.genre }}
+    </div>
+
+    <a class="badge badge-warning" routerLink="/animes/{{ currentAnime.id }}">
+      Edit
+    </a>
+  </div>
+
+  <div *ngIf="!currentAnime">
+    <br />
+    <p>Please click on an Anime...</p>
+  </div>
+</div>
+
+<ng-template #editable>
+  <div *ngIf="currentAnime.id" class="edit-form">
+    <h4>Anime</h4>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" [(ngModel)]="currentAnime.title" name="title" />
+      </div>
+      <div class="form-group">
+        <label for="description">Genre</label>
+        <input type="text" class="form-control" id="description" [(ngModel)]="currentAnime.genre" name="genre" />
+      </div>
+
+    </form>
+
+    <button class="badge badge-danger mr-2" (click)="deleteAnime()">
+      Delete
+    </button>
+
+  </div>
+
+  <div *ngIf="!currentAnime.id">
+    <br />
+    <p>Cannot access this Anime...</p>
+  </div>
+</ng-template>
