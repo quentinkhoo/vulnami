@@ -1,7 +1,7 @@
 # vulnami
-/.bundle/
+.bundle/
 
 # vulnami-frontend
-/vulnami-frontend/.angular
-/vulnami-frontend/.vscode
-/vulnami-frontend/node_modules
+vulnami-frontend/.angular/
+vulnami-frontend/.vscode/
+vulnami-frontend/node_modules/
