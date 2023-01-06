@@ -15,7 +15,7 @@ module Vulnami
           halt 422 unless request.params.valid?
           
           animes = rom.relations[:animes]
-            .select(:title, :genre)
+            .select(:id, :title, :genre)
             .order(:title)
             .page(request.params[:page] || 1)
             .per_page(request.params[:per_page] || 5)
