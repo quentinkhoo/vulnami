@@ -5,5 +5,6 @@ module Vulnami
     root to: "home.show"
     get "/animes", to: "animes.index"
     get "/animes/:id", to: "animes.show"
+    post "/animes", to: "animes.create"
   end
 end
