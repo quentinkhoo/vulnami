@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Anime } from 'src/app/models/anime.model';
 import { AnimeService } from 'src/app/services/anime.service';
 
@@ -7,7 +7,7 @@ import { AnimeService } from 'src/app/services/anime.service';
   templateUrl: './animes-list.component.html',
   styleUrls: ['./animes-list.component.css']
 })
-export class AnimesListComponent {
+export class AnimesListComponent implements OnInit {
 
   animes?: Anime[];
   currentAnime: Anime = {};

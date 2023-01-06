@@ -5,8 +5,7 @@
       <label><strong>Title:</strong></label> {{ currentAnime.title }}
     </div>
     <div>
-      <label><strong>Genre:</strong></label>
-      {{ currentAnime.genre }}
+      <label><strong>Genre:</strong></label> {{ currentAnime.genre }}
     </div>
 
     <a class="badge badge-warning" routerLink="/animes/{{ currentAnime.id }}">
@@ -29,8 +28,8 @@
         <input type="text" class="form-control" id="title" [(ngModel)]="currentAnime.title" name="title" />
       </div>
       <div class="form-group">
-        <label for="description">Genre</label>
-        <input type="text" class="form-control" id="description" [(ngModel)]="currentAnime.genre" name="genre" />
+        <label for="genre">Genre</label>
+        <input type="text" class="form-control" id="genre" [(ngModel)]="currentAnime.genre" name="genre" />
       </div>
 
     </form>
