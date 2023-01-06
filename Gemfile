@@ -10,6 +10,7 @@ gem "hanami-validations", "~> 2.0"
 gem "dry-types", "~> 1.0", ">= 1.6.1"
 gem "puma", "5.6.2"
 gem "rake"
+gem 'rack-cors'
 
 gem "rom", "~> 5.3"
 gem "rom-sql", "~> 3.6"
