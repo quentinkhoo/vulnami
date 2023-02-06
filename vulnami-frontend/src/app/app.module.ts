@@ -8,12 +8,14 @@ import { AnimeDetailsComponent } from './components/anime-details/anime-details.
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AddAnimeComponent } from './components/add-anime/add-anime.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimesListComponent,
-    AnimeDetailsComponent
+    AnimeDetailsComponent,
+    AddAnimeComponent
   ],
   imports: [
     BrowserModule,
