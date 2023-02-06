@@ -13,16 +13,17 @@ module Vulnami
         end
       end
 
-        def handle(*, response)
+        def handle(request, response)
           if request.params.valid?
             anime = rom.relations[:animes].changeset(:create, request.params[:anime]).commit
 
             response.status = 201
-            response.body = book.to_json
+            response.body = anime.to_json
           else
             response.status = 422
             response.format = :json
             response.body = request.params.errors.to_json
+          end
         end
       end
     end
