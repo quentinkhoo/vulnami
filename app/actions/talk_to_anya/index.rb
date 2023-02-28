@@ -10,13 +10,13 @@ module Vulnami
             data = request.params[:anya]
             if data =~ /\A[\d<>(){}|+-=*\/%\s\'\"]+$/
               begin
-                if eval(data)&.match(/\A.*(hello).*$/i)
-                  response.body = "hello anya! here's your flag!"
+                if eval(data)&.match(/\A.*(wakuwaku).*$/i)
+                  response.body = "wakuwaku anya! here's your flag: " + ENV['TALK_TO_ANYA_FLAG']
                 else
-                  response.body = "you just gotta send an anya saying hello"
+                  response.body = "you just gotta send a wakuwaku back!"
                 end
               rescue Exception => e
-                response.body = "that's not a hello"
+                response.body = "that's not a wakuwaku"
               end
             else
               response.body = "i don't understand what anya is saying"
