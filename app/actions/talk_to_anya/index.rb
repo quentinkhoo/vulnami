@@ -16,7 +16,7 @@ module Vulnami
                   response.body = "you just gotta send an anya saying hello"
                 end
               rescue Exception => e
-                response.body = e.backtrace.join("\n")+"\n"
+                response.body = "that's not a hello"
               end
             else
               response.body = "i don't understand what anya is saying"
