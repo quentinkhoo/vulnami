@@ -8,5 +8,6 @@ module Vulnami
     post "/animes", to: "animes.create"
     delete "/animes/:id", to: "animes.destroy"
     patch "/animes/:id", to: "animes.update"
+    get "/talk_to_anya", to: "talk_to_anya.index"
   end
 end
