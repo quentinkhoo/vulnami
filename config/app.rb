@@ -6,14 +6,12 @@ require "rack/cors"
 
 module Vulnami
   class App < Hanami::App
-
+    
     config.middleware.use Rack::Cors do
       allow do
         origins '*'
         resource '*', headers: :any, methods: [:get, :post, :patch, :put, :options, :delete]
       end
     end
-
-    config.middleware.use :body_parser, :json
   end
 end
