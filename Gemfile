@@ -3,15 +3,15 @@
 source "https://rubygems.org"
 
 gem "hanami", "~> 2.0"
-gem "hanami-router", "~> 2.0"
-gem "hanami-controller", "~> 2.0"
+gem "hanami-router", "~> 2.1", ">= 2.1.0"
+gem "hanami-controller", "~> 2.0", ">= 2.0.2"
 gem "hanami-validations", "~> 2.0"
 gem "hanami-model"
 
 gem "dry-types", "~> 1.0", ">= 1.6.1"
 gem "puma", "5.6.2"
 gem "rake"
-gem 'rack-cors'
+gem 'rack-cors', '>= 2.0.0'
 
 gem "rom", "~> 5.3"
 gem "rom-sql", "~> 3.6"
@@ -34,6 +34,6 @@ group :development do
 end
 
 group :test do
-  gem "rack-test"
+  gem "rack-test", ">= 2.0.0"
   gem "database_cleaner-sequel"
 end
