@@ -3,8 +3,8 @@
 source "https://rubygems.org"
 
 gem "hanami", "~> 2.0"
-gem "hanami-router", "~> 2.0"
-gem "hanami-controller", "~> 2.0"
+gem "hanami-router", "~> 2.3", ">= 2.3.0"
+gem "hanami-controller", "~> 2.3", ">= 2.3.0"
 gem "hanami-validations", "~> 2.0"
 gem "hanami-model"
 
